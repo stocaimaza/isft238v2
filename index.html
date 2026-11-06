@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: clave para que el sitio se adapte al ancho del celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISFT N° 238 · Carreras 2026 · Camet Norte</title>
+  <meta name="description" content="Instituto Superior de Formación Técnica N° 238 de Camet Norte, Mar Chiquita. Cinco tecnicaturas superiores. Inscripciones abiertas.">
+  <meta name="theme-color" content="#0F2A35">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Nuestros estilos y nuestro JavaScript (defer = espera a que cargue el HTML) -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO (queda fijo arriba) ===== -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <div class="encabezado__barra">
+        <a class="marca" href="index.html" aria-label="ISFT N° 238, ir al inicio">
+          <span class="marca__logo" aria-hidden="true">238</span>
+          <span class="marca__texto"><strong>ISFT N° 238</strong><span>Camet Norte · Mar Chiquita</span></span>
+        </a>
+        <!-- Botón hamburguesa (solo celulares y tablets). main.js lo hace funcionar -->
+        <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+          <svg class="icono-abrir" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icono-cerrar" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="menu" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="#carreras">Carreras</a></li>
+          <li><a href="#docentes">Docentes</a></li>
+          <li><a href="#calendario">Calendario</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#como-llegar">Cómo llegar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="boton boton--primario" href="index.html#inscripcion">Quiero inscribirme</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== PORTADA ===== -->
+    <section class="portada" aria-labelledby="titulo-portada">
+      <div class="contenedor portada__grilla">
+        <div class="portada__texto">
+          <a class="pildora" href="#inscripcion">Inscripciones abiertas</a>
+          <h1 id="titulo-portada">Estudiá cerca de casa. Formate para lo que viene.</h1>
+          <p class="portada__lema">Educación superior pública y gratuita</p>
+          <p class="portada__bajada">Cinco tecnicaturas superiores en Camet Norte, pensadas para trabajar en la costa, en la salud y en la tecnología de nuestra zona.</p>
+          <div class="botones">
+            <a class="boton boton--primario" href="#carreras">Ver las carreras</a>
+            <a class="boton boton--contorno-claro" href="#inscripcion">Cómo me inscribo</a>
+          </div>
+        </div>
+        <div class="portada__foto">
+          <img src="img/edificio.jpg" alt="Frente del edificio de la EP N° 30, donde funciona el ISFT 238" width="800" height="600">
+          <div class="horizonte" aria-hidden="true"></div>
+          <div class="horizonte" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CARRERAS ===== -->
+    <section class="seccion" id="carreras" aria-labelledby="titulo-carreras">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <h2 id="titulo-carreras">Nuestras carreras</h2>
+          <p>Tecnicaturas superiores con título oficial. Elegí una para ver su plan de estudios.</p>
+        </div>
+        <div class="grilla" style="--min: 300px">
+          <article class="tarjeta">
+            <img class="tarjeta__foto" src="img/datos.jpg" alt="Dos estudiantes analizan gráficos en una computadora" width="600" height="400" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <span class="tarjeta__numero">01</span>
+              <h3>Ciencia de Datos e Inteligencia Artificial</h3>
+              <p>Programación, bases de datos y análisis de información para tomar mejores decisiones con IA.</p>
+              <a class="tarjeta__enlace" href="carreras/ciencia-de-datos.html">Ver plan de estudios →</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta__foto" src="img/enfermeria.jpg" alt="Estudiantes de enfermería practican la toma de presión" width="600" height="400" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <span class="tarjeta__numero">02</span>
+              <h3>Enfermería</h3>
+              <p>Cuidado de la salud de las personas y la comunidad, con prácticas en instituciones de salud.</p>
+              <a class="tarjeta__enlace" href="carreras/enfermeria.html">Ver plan de estudios →</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta__foto" src="img/energias.jpg" alt="Técnicos revisan paneles solares frente al mar" width="600" height="400" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <span class="tarjeta__numero">03</span>
+              <h3>Gestión de Energías Renovables</h3>
+              <p>Instalación y mantenimiento de sistemas de energía solar, eólica y otras fuentes limpias.</p>
+              <a class="tarjeta__enlace" href="carreras/energias-renovables.html">Ver plan de estudios →</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta__foto" src="img/recreacion.jpg" alt="Grupo haciendo una actividad recreativa con pelotas en un parque" width="600" height="400" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <span class="tarjeta__numero">04</span>
+              <h3>Tiempo Libre y Recreación</h3>
+              <p>Diseño y coordinación de actividades recreativas, deportivas y al aire libre para todas las edades.</p>
+              <a class="tarjeta__enlace" href="carreras/tiempo-libre-y-recreacion.html">Ver plan de estudios →</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta__foto" src="img/turismo.jpg" alt="Guía de turismo con un grupo en los médanos frente al mar" width="600" height="400" loading="lazy">
+            <div class="tarjeta__cuerpo">
+              <span class="tarjeta__numero">05</span>
+              <h3>Guía de Turismo</h3>
+              <p>Gestión de servicios y destinos turísticos, con la costa de Mar Chiquita como aula abierta.</p>
+              <a class="tarjeta__enlace" href="carreras/guia-de-turismo.html">Ver plan de estudios →</a>
+            </div>
+          </article>
+          <div class="tarjeta tarjeta--oscura">
+            <h3>¿No sabés cuál elegir?</h3>
+            <p>Escribinos y te contamos cómo es cada carrera.</p>
+            <a class="boton boton--primario" href="#contacto">Hacer una consulta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DOCENTES ===== -->
+    <section class="seccion seccion--celeste" id="docentes" aria-labelledby="titulo-docentes">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <h2 id="titulo-docentes">Nuestros docentes</h2>
+          <p>Profesionales de cada área que te acompañan desde el primer día.</p>
+        </div>
+        <div class="grilla" style="--min: 250px">
+          <article class="docente">
+            <span class="docente__avatar docente__avatar--lleno" aria-hidden="true">ST</span>
+            <div>
+              <h3>Samuel Tocaimaza</h3>
+              <p class="docente__carrera">Ciencia de Datos e IA</p>
+              <p class="docente__materias">Lógica Computacional · Técnicas de Programación</p>
+            </div>
+          </article>
+          <article class="docente">
+            <span class="docente__avatar" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <div>
+              <h3>[NOMBRE Y APELLIDO]</h3>
+              <p class="docente__carrera">Enfermería</p>
+              <p class="docente__materias">[MATERIAS]</p>
+            </div>
+          </article>
+          <article class="docente">
+            <span class="docente__avatar" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <div>
+              <h3>[NOMBRE Y APELLIDO]</h3>
+              <p class="docente__carrera">Gestión de Energías Renovables</p>
+              <p class="docente__materias">[MATERIAS]</p>
+            </div>
+          </article>
+          <article class="docente">
+            <span class="docente__avatar" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <div>
+              <h3>[NOMBRE Y APELLIDO]</h3>
+              <p class="docente__carrera">Tiempo Libre y Recreación</p>
+              <p class="docente__materias">[MATERIAS]</p>
+            </div>
+          </article>
+          <article class="docente">
+            <span class="docente__avatar" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <div>
+              <h3>[NOMBRE Y APELLIDO]</h3>
+              <p class="docente__carrera">Guía de Turismo</p>
+              <p class="docente__materias">[MATERIAS]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALENDARIO ACADÉMICO ===== -->
+    <section class="seccion" id="calendario" aria-labelledby="titulo-calendario">
+      <div class="contenedor dos-columnas dos-columnas--angosta-izq">
+        <div class="texto-carrera">
+          <h2 id="titulo-calendario">Calendario académico</h2>
+          <p>Inicio de clases, mesas de examen, recesos y fechas importantes del ciclo lectivo.</p>
+          <div><a class="boton boton--oscuro" href="#">Descargar calendario</a></div>
+        </div>
+        <!-- Cuando tengamos la imagen, reemplazar este bloque por:
+             <img src="img/calendario.jpg" alt="Calendario académico 2027"> -->
+        <div class="reservado" role="img" aria-label="Lugar para la imagen del calendario académico">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          [IMAGEN DEL CALENDARIO ACADÉMICO]
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOVEDADES ===== -->
+    <section class="seccion seccion--blanca" id="noticias" aria-labelledby="titulo-noticias">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <h2 id="titulo-noticias">Novedades</h2>
+          <a href="#">Ver todas las noticias →</a>
+        </div>
+        <div class="grilla">
+          <article class="tarjeta noticia noticia--destacada">
+            <div class="noticia__meta"><span class="noticia__categoria">Inscripciones</span><span class="noticia__fecha">[FECHA]</span></div>
+            <h3>Ya están abiertas las inscripciones</h3>
+            <p>Podés anotarte en cualquiera de las cinco carreras. Te contamos qué necesitás.</p>
+            <a class="tarjeta__enlace" href="#inscripcion">Leer más →</a>
+          </article>
+          <article class="tarjeta noticia">
+            <div class="noticia__meta"><span class="noticia__categoria">[CATEGORÍA]</span><span class="noticia__fecha">[FECHA]</span></div>
+            <h3>[TÍTULO DE LA NOTICIA]</h3>
+            <p>[RESUMEN EN UNA O DOS LÍNEAS]</p>
+            <a class="tarjeta__enlace" href="#">Leer más →</a>
+          </article>
+          <article class="tarjeta noticia">
+            <div class="noticia__meta"><span class="noticia__categoria">[CATEGORÍA]</span><span class="noticia__fecha">[FECHA]</span></div>
+            <h3>[TÍTULO DE LA NOTICIA]</h3>
+            <p>[RESUMEN EN UNA O DOS LÍNEAS]</p>
+            <a class="tarjeta__enlace" href="#">Leer más →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSCRIPCIÓN ===== -->
+    <section class="seccion" id="inscripcion" aria-labelledby="titulo-inscripcion">
+      <div class="contenedor dos-columnas dos-columnas--arriba">
+        <div class="texto-carrera">
+          <span class="estado">Abiertas</span>
+          <h2 id="titulo-inscripcion">Inscripciones abiertas</h2>
+          <p>Anotate hasta el [FECHA DE CIERRE].</p>
+          <div><a class="boton boton--primario" href="#">Completar el formulario</a></div>
+        </div>
+        <ol class="pasos">
+          <li class="paso"><span class="paso__numero" aria-hidden="true">1</span><div><h3>Elegí tu carrera</h3><p>Revisá el plan de estudios y los horarios.</p></div></li>
+          <li class="paso"><span class="paso__numero" aria-hidden="true">2</span><div><h3>Juntá la documentación</h3><p>[DOCUMENTACIÓN REQUERIDA]</p></div></li>
+          <li class="paso"><span class="paso__numero" aria-hidden="true">3</span><div><h3>Acercate al instituto</h3><p>Presentá todo en secretaría: [DÍAS Y HORARIO DE ATENCIÓN]</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CÓMO LLEGAR ===== -->
+    <section class="seccion seccion--celeste" id="como-llegar" aria-labelledby="titulo-llegar">
+      <div class="contenedor dos-columnas dos-columnas--angosta-izq">
+        <div class="texto-carrera">
+          <h2 id="titulo-llegar">Cómo llegar</h2>
+          <p>Luis Sáenz Peña 513, Camet Norte, partido de Mar Chiquita. Funcionamos en el edificio de la EP N° 30.</p>
+          <p>Por la Ruta 11, entre Mar del Plata y Santa Clara del Mar.</p>
+          <div class="botones">
+            <a class="boton boton--primario" href="https://www.google.com/maps/dir/?api=1&amp;destination=-37.8210,-57.4962" target="_blank" rel="noopener">Cómo llegar desde mi ubicación</a>
+            <a class="boton boton--contorno" href="https://www.google.com/maps/search/?api=1&amp;query=-37.8210,-57.4962" target="_blank" rel="noopener">Ver en Google Maps</a>
+          </div>
+        </div>
+        <!-- Mapa de Google incrustado. loading="lazy" = se carga recién cuando se ve -->
+        <div class="mapa">
+          <p class="mapa__cargando">Cargando mapa…</p>
+          <iframe title="Mapa: ubicación del ISFT N° 238 en Camet Norte" src="https://www.google.com/maps?q=-37.8210,-57.4962&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie" id="contacto">
+    <div class="contenedor">
+      <div class="pie__columnas">
+        <div>
+          <strong class="pie__nombre">ISFT N° 238</strong>
+          <span>Instituto Superior de Formación Técnica</span>
+          <span>Camet Norte, partido de Mar Chiquita, Buenos Aires</span>
+        </div>
+        <div>
+          <strong class="pie__titulo">Dónde estamos</strong>
+          <span>Luis Sáenz Peña 513, Camet Norte</span>
+          <span>Edificio de la EP N° 30</span>
+          <a href="index.html#como-llegar">Ver el mapa</a>
+        </div>
+        <div>
+          <strong class="pie__titulo">Contacto</strong>
+          <span>[EMAIL]</span>
+          <span>[TELÉFONO / WHATSAPP]</span>
+        </div>
+      </div>
+      <p class="pie__legal">© <span data-anio>2026</span> ISFT N° 238 · isft238.com.ar</p>
+    </div>
+  </footer>
+
+  <!-- Lugar reservado para el chatbot (pendiente) -->
+  <div id="chatbot"></div>
+</body>
+</html>

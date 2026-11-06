@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: clave para que el sitio se adapte al ancho del celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiempo Libre y Recreación · ISFT N° 238</title>
+  <meta name="description" content="Tecnicatura Superior en Tiempo Libre y Recreación en el ISFT N° 238 de Camet Norte: título, plan de estudios y salida laboral.">
+  <meta name="theme-color" content="#0F2A35">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Nuestros estilos y nuestro JavaScript (defer = espera a que cargue el HTML) -->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== ENCABEZADO (queda fijo arriba) ===== -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <div class="encabezado__barra">
+        <a class="marca" href="../index.html" aria-label="ISFT N° 238, ir al inicio">
+          <span class="marca__logo" aria-hidden="true">238</span>
+          <span class="marca__texto"><strong>ISFT N° 238</strong><span>Camet Norte · Mar Chiquita</span></span>
+        </a>
+        <!-- Botón hamburguesa (solo celulares y tablets). main.js lo hace funcionar -->
+        <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+          <svg class="icono-abrir" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icono-cerrar" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="menu" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="../index.html#carreras">Carreras</a></li>
+          <li><a href="#plan">Plan de estudios</a></li>
+          <li><a href="#docentes">Docentes</a></li>
+          <li><a href="../index.html#como-llegar">Cómo llegar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="boton boton--primario" href="../index.html#inscripcion">Quiero inscribirme</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== PORTADA DE LA CARRERA ===== -->
+    <section class="carrera-portada" aria-labelledby="titulo-carrera">
+      <div class="contenedor dos-columnas">
+        <div class="portada__texto" style="padding-bottom: 0">
+          <a class="volver" href="../index.html#carreras">← Todas las carreras</a>
+          <p class="etiqueta">Tecnicatura Superior</p>
+          <h1 id="titulo-carrera" style="font-size: clamp(2.1rem, 6vw, 4rem)">Tiempo Libre y Recreación</h1>
+          <p class="portada__bajada">Planificar y coordinar propuestas recreativas, juegos, eventos y actividades al aire libre para personas de todas las edades.</p>
+          <a class="pildora" href="#inscripcion-carrera">Inscripciones abiertas</a>
+        </div>
+        <img src="../img/recreacion.jpg" alt="Grupo haciendo una actividad recreativa con pelotas en un parque" width="800" height="533">
+      </div>
+    </section>
+
+    <!-- ===== DATOS RÁPIDOS ===== -->
+    <section aria-label="Datos de la carrera">
+      <div class="contenedor">
+        <div class="grilla datos">
+          <div class="dato"><span>Título</span><strong>Técnica/o Superior en Tiempo Libre y Recreación</strong></div>
+          <div class="dato"><span>Duración</span><strong>3 años</strong></div>
+          <div class="dato"><span>Carga horaria</span><strong>1472 horas reloj</strong></div>
+          <div class="dato"><span>Modalidad</span><strong>Presencial</strong></div>
+          <div class="dato"><span>Resolución</span><strong>Res. 3783/22</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUÉ VAS A APRENDER / DÓNDE VAS A TRABAJAR ===== -->
+    <section class="seccion">
+      <div class="contenedor dos-columnas dos-columnas--arriba">
+        <div class="texto-carrera">
+          <h2>Qué vas a aprender</h2>
+          <p>A planificar, desarrollar y evaluar propuestas recreativas pensadas para cada grupo, lugar y propósito; a coordinar grupos y organizar eventos lúdicos y recreativos.</p>
+          <p>La formación tiene una mirada inclusiva y de derechos: que todas las personas, sin importar su edad, género u origen, puedan acceder al tiempo libre y la recreación.</p>
+        </div>
+        <div class="texto-carrera">
+          <h2>Dónde vas a trabajar</h2>
+          <ul>
+            <li>Clubes, polideportivos y centros de jubilados.</li>
+            <li>Emprendimientos turísticos.</li>
+            <li>Hospitales y centros de salud.</li>
+            <li>Asociaciones de fomento, sindicatos y obras sociales.</li>
+            <li>Espacios comunitarios, estatales o privados, o de forma autónoma.</li>
+          </ul>
+          <p class="nota">El título no habilita para ejercer como docente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PLAN DE ESTUDIOS ===== -->
+    <section class="seccion seccion--celeste" id="plan" aria-labelledby="titulo-plan">
+      <div class="contenedor">
+        <div class="seccion__cabecera">
+          <h2 id="titulo-plan">Plan de estudios</h2>
+          <p>Según Res. 3783/22.</p>
+        </div>
+        <div class="grilla" style="--min: 300px">
+          <div class="anio">
+            <div class="anio__cabecera"><h3>1° año</h3><span class="anio__horas">512 h</span></div>
+            <ul>
+              <li>Taller de Abordaje de la ESI</li>
+              <li>Tiempo Libre y Recreación</li>
+              <li>Sujetos de la Recreación</li>
+              <li>Taller de Juegos y Actividades Recreativas</li>
+              <li>Taller de Artes Visuales</li>
+              <li>Taller de Expresión Corporal</li>
+              <li>Prácticas Profesionalizantes I: Aproximación al Campo Laboral</li>
+            </ul>
+          </div>
+          <div class="anio">
+            <div class="anio__cabecera"><h3>2° año</h3><span class="anio__horas">448 h</span></div>
+            <ul>
+              <li>Educación Ambiental</li>
+              <li>Historia Política</li>
+              <li>Coordinación de Grupos</li>
+              <li>Taller de Actividades Recreativas en Ambientes Naturales</li>
+              <li>Taller de Artes Musicales</li>
+              <li>Prácticas Profesionalizantes II: Planificación de Proyectos Recreativos</li>
+            </ul>
+          </div>
+          <div class="anio">
+            <div class="anio__cabecera"><h3>3° año</h3><span class="anio__horas">512 h</span></div>
+            <ul>
+              <li>Taller de Herramientas de Información y Comunicación</li>
+              <li>Organizaciones e Instituciones Recreativas</li>
+              <li>Diseño de Proyectos</li>
+              <li>Juegos y Deportes Alternativos</li>
+              <li>Taller Optativo (Teatro o Medios Audiovisuales)</li>
+              <li>Taller de Prácticas Corporales Emergentes</li>
+              <li>Prácticas Profesionalizantes III: Diseño e Implementación de Proyectos Recreativos</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin-top: 24px"><a href="#">Descargar el diseño curricular (PDF) →</a></p>
+      </div>
+    </section>
+
+    <!-- ===== DOCENTES DE LA CARRERA ===== -->
+    <section class="seccion" id="docentes" aria-labelledby="titulo-docentes">
+      <div class="contenedor">
+        <h2 id="titulo-docentes" style="margin-bottom: 28px">Docentes de la carrera</h2>
+        <div class="grilla" style="--min: 260px">
+          <article class="docente">
+            <span class="docente__avatar" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <div>
+              <h3>[NOMBRE Y APELLIDO]</h3>
+              <p class="docente__materias">[MATERIAS]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSCRIPCIÓN ===== -->
+    <section id="inscripcion-carrera" style="padding-bottom: 88px">
+      <div class="contenedor">
+        <div class="banda">
+          <div class="banda__texto">
+            <h2 style="font-size: clamp(1.6rem, 3.4vw, 2.3rem)">Inscripciones abiertas</h2>
+            <p>Requisito: secundario completo. Las personas mayores de 25 años sin secundario pueden ingresar según el art. 7 de la Ley 24.521.</p>
+            <p>Anotate hasta el [FECHA DE CIERRE].</p>
+          </div>
+          <a class="boton boton--primario" href="#">Completar el formulario</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie" id="contacto">
+    <div class="contenedor">
+      <div class="pie__columnas">
+        <div>
+          <strong class="pie__nombre">ISFT N° 238</strong>
+          <span>Instituto Superior de Formación Técnica</span>
+          <span>Camet Norte, partido de Mar Chiquita, Buenos Aires</span>
+        </div>
+        <div>
+          <strong class="pie__titulo">Dónde estamos</strong>
+          <span>Luis Sáenz Peña 513, Camet Norte</span>
+          <span>Edificio de la EP N° 30</span>
+          <a href="../index.html#como-llegar">Ver el mapa</a>
+        </div>
+        <div>
+          <strong class="pie__titulo">Contacto</strong>
+          <span>[EMAIL]</span>
+          <span>[TELÉFONO / WHATSAPP]</span>
+        </div>
+      </div>
+      <p class="pie__legal">© <span data-anio>2026</span> ISFT N° 238 · isft238.com.ar</p>
+    </div>
+  </footer>
+
+  <!-- Lugar reservado para el chatbot (pendiente) -->
+  <div id="chatbot"></div>
+</body>
+</html>
