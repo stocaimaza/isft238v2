@@ -42,9 +42,28 @@ Buscar los textos entre corchetes, por ejemplo `[FECHA DE CIERRE]`, `[EMAIL]`, `
 - Requisitos de ingreso de Enfermería (no figuran en la Res. 854/16)
 - Enlaces de "Completar el formulario" y "Descargar el diseño curricular"
 
-## Pendiente
+## Chatbot
 
-- **Chatbot:** el lugar está reservado en el HTML (`<div id="chatbot">`) y en `js/main.js`.
+Tiene dos partes:
+
+- **`js/chatbot.js`** (en la web): arma la ventana del chat y le manda las preguntas al Worker.
+  Si el Worker no responde, contesta con preguntas frecuentes guardadas en el mismo archivo.
+- **`worker/worker.js`** (en Cloudflare, no se sube con la web): recibe la pregunta y se la pasa a la IA
+  (modelo Gemma 4 de Workers AI) junto con la información del instituto.
+
+Datos del Worker publicado:
+
+- Dirección: `https://chatbot-isft238.swtocaimaza.workers.dev/`
+- Panel: Cloudflare → Workers & Pages → `chatbot-isft238`
+- Binding: `AI` (Workers AI)
+- Cupo gratuito: 10.000 "neuronas" por día (unos cientos de preguntas). Si se agota, la IA deja de
+  responder hasta las 21:00 hora argentina y el chat usa las respuestas de respaldo. No cobra nada.
+
+**Para cambiar lo que sabe el chatbot** (fechas, teléfono, docentes): editar `INFO_INSTITUTO` en
+`worker/worker.js`, pegarlo en el editor del Worker en Cloudflare ("Edit code") y tocar **Deploy**.
+
+**Cuando la web esté publicada**, conviene limitar quién puede usar el Worker cambiando
+`ORIGENES_PERMITIDOS` por el dominio real, por ejemplo `['https://isft238.com.ar']`.
 
 ## Fuentes de la información
 

@@ -55,6 +55,6 @@ document.querySelectorAll('[data-anio]').forEach((elemento) => {
   elemento.textContent = new Date().getFullYear();
 });
 
-// ---------- 4. Chatbot (PENDIENTE) ----------
-// Acá vamos a conectar el asistente para futuros estudiantes.
-// En el HTML ya está reservado el lugar: <div id="chatbot"></div>
+// ---------- 4. Chatbot ----------
+// El chatbot está en su propio archivo: js/chatbot.js
+// (la IA corre en Cloudflare: ver la carpeta worker/)
